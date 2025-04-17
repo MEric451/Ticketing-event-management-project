@@ -1,0 +1,28 @@
+<div class="container">
+    <h2>Attendee List</h2>
+  
+    <table *ngIf="attendees.length > 0" class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Event</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let attendee of attendees">
+          <td>{{ attendee.fullName }}</td>
+          <td>{{ attendee.email }}</td>
+          <td>{{ attendee.event.name }}</td>
+          <td>
+            <button (click)="viewAttendee(attendee.attendeeId)" class="btn btn-info">View</button>
+            <button (click)="deleteAttendee(attendee.id)" class="btn btn-danger">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <p *ngIf="attendees.length === 0">No attendees found!</p>
+  </div>
+  

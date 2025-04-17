@@ -1,0 +1,20 @@
+<div class="landing-wrapper" [@pageAnimation]>
+    <h1 class="headline">
+        Welcome to <span class="animated-brand">EventEase</span>
+      </h1>
+      
+    <p class="subtitle">Your all-in-one solution for managing Events, Attendees, and Tickets effortlessly.</p>
+
+    <div class="stats-grid">
+        <mat-card class="stat-card" *ngFor="let stat of stats" [@cardFadeIn]>
+            <mat-icon class="stat-icon">{{ stat.icon }}</mat-icon>
+            <h2>{{ stat.value }}</h2>
+            <p>{{ stat.title }}</p>
+        </mat-card>
+    </div>
+
+    <div class="cta-buttons">
+        <button mat-raised-button color="primary" [routerLink]="['/event-create']">Start Organizing</button>
+        <button mat-stroked-button color="accent" [routerLink]="['/event-list']">Explore Events</button>
+    </div>
+</div>

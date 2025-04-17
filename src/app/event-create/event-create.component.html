@@ -1,0 +1,40 @@
+<div class="container">
+    <h2>Create Event</h2>
+
+<form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">Event Name:</label>
+    <input id="name" formControlName="name" />
+    <div *ngIf="eventForm.controls['name'].invalid && eventForm.controls['name'].touched">
+      <small class="error">Event Name is required.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="location">Location:</label>
+    <input id="location" formControlName="location" />
+    <div *ngIf="eventForm.controls['location'].invalid && eventForm.controls['location'].touched">
+      <small class="error">Location is required.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="date">Date:</label>
+    <input type="date" id="date" formControlName="date" />
+    <div *ngIf="eventForm.controls['date'].invalid && eventForm.controls['date'].touched">
+      <small class="error">Date is required.</small>
+    </div>
+  </div>
+
+  <div>
+    <label for="capacity">Capacity:</label>
+    <input type="number" id="capacity" formControlName="capacity" />
+    <div *ngIf="eventForm.controls['capacity'].invalid && eventForm.controls['capacity'].touched">
+      <small class="error">Capacity must be a positive number.</small>
+    </div>
+  </div>
+
+  <button type="submit" [disabled]="eventForm.invalid">Submit</button>
+</form>
+
+</div>

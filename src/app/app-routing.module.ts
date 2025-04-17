@@ -1,32 +1,37 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { CreateCustomerComponent } from './create-customer/create-customer.component';
-import { CustomerListComponent } from './customer-list/customer-list.component';
-import { CreateAccountComponent } from './create-account/create-account.component';
-import { AccountListComponent } from './account-list/account-list.component';
-import { MapAtmCardComponent } from './map-atm-card/map-atm-card.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AtmCardTransactionFormComponent } from './atm-card-transaction-form/atm-card-transaction-form.component';
-import { AtmCardTransactionListComponent } from './atm-card-transaction-list/atm-card-transaction-list.component';
-import { AtmCardFormComponent } from './atm-card-form/atm-card-form.component';
+import { EventCreateComponent } from './event-create/event-create.component';
+import { EventListComponent } from './event-list/event-list.component';
+import { EditEventComponent } from './edit-event/edit-event.component';
+import { RegisterAttendeeComponent } from './register-attendee/register-attendee.component';
+import { AttendeeListComponent } from './attendee-list/attendee-list.component';
+import { TicketIssueComponent } from './ticket-issue/ticket-issue.component';
+import { TicketListComponent } from './ticket-list/ticket-list.component';
+import { LandingComponent } from './landing/landing.component';
+
+
 
 const routes: Routes = [
 
-  { path: 'dashboard',
-    component: DashboardComponent,
-    children: [
-      { path: 'create-customer', component: CreateCustomerComponent },
-      { path: 'customers', component: CustomerListComponent },
-      { path: 'create-account', component: CreateAccountComponent },
-      { path: 'accounts', component: AccountListComponent },
-      { path: 'map-atm-card', component: MapAtmCardComponent },
-      { path: 'mapped-cards', component: AtmCardFormComponent },
-      { path: 'atm-transactions', component: AtmCardTransactionListComponent },
-      { path: 'atm-card-transaction-form', component: AtmCardTransactionFormComponent },
-      { path: '', redirectTo: 'customers', pathMatch: 'full' }
-    ]
-  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent},
+
+   
+      { path: 'landing', component: LandingComponent },
+      { path: 'event-create', component: EventCreateComponent },
+      { path: 'event-list', component: EventListComponent },
+      { path: 'events/edit/:id', component: EditEventComponent },
+      { path: 'register-attendee', component: RegisterAttendeeComponent },
+      { path: 'attendee-list', component: AttendeeListComponent },
+      { path: 'ticket-issue', component: TicketIssueComponent },
+      { path: 'ticket-list', component: TicketListComponent },
+      { path: '', component: LandingComponent },
+
+
+    
+  
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' }
 
 ];

@@ -1,0 +1,38 @@
+<div class="container">
+  <form (ngSubmit)="issueTicket()">
+    <!-- Select Attendee -->
+    <div class="form-group">
+      <label for="attendee">Select Attendee</label>
+      <select id="attendee" [(ngModel)]="selectedAttendee" name="attendee" class="form-control" required>
+        <option value="">Select an attendee</option>
+        <option *ngFor="let attendee of attendees" [value]="attendee.id">{{ attendee.fullName }}</option>
+      </select>
+    </div>
+  
+    <!-- Select Ticket Type -->
+    <div class="form-group">
+      <label for="ticketType">Select Ticket Type</label>
+      <select id="ticketType" [(ngModel)]="selectedTicketType" name="ticketType" class="form-control" required>
+        <option *ngFor="let type of ticketTypes" [value]="type">{{ type }}</option>
+      </select>
+    </div>
+  
+    <!-- Amount -->
+    <div class="form-group">
+      <label for="amount">Amount to Pay</label>
+      <input
+        type="number"
+        id="amount"
+        [(ngModel)]="priceToPay"
+        name="amount"
+        class="form-control"
+        required
+        min="1"
+        placeholder="Enter amount"
+      />
+    </div>
+  
+    <button type="submit" class="btn btn-primary form-btn">Issue Ticket</button>
+  </form>
+  
+</div>

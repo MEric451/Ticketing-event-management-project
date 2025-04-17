@@ -1,0 +1,76 @@
+/* Modal container */
+.dialog-container {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Roboto', sans-serif; /* Stylish font */
+  }
+  
+  /* Title Styling */
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2c3e50; /* Darker color for title */
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #3498db; /* Blue bottom border */
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  /* Content Styling */
+  mat-dialog-content p {
+    font-size: 1.1rem;
+    color: #7f8c8d; /* Soft gray for content */
+    margin: 15px 0;
+    line-height: 1.5;
+  }
+  
+  strong {
+    font-weight: 600;
+    color: #34495e; /* Darker color for labels */
+  }
+  
+  /* Button Styling */
+  mat-dialog-actions {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+  
+  button.mat-button {
+    background-color: #3498db; /* Blue button */
+    color: #fff;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+  }
+  
+  button.mat-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    cursor: pointer;
+    transform: translateY(-2px); /* Small hover effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .dialog-container {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    mat-dialog-title {
+      font-size: 1.6rem;
+    }
+  
+    mat-dialog-content p {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,36 @@
+.container {
+  margin-top: 30px;
+  width: 1050px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #343a40;
+  font-weight: 600;
+}
+
+.table {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table th {
+  background-color: #f8f9fa;
+  color: #495057;
+  text-align: center;
+}
+
+.table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn-danger {
+  font-weight: 500;
+  padding: 4px 12px;
+}
+.table tbody tr:hover {
+  background-color: #f1f3f5;
+}

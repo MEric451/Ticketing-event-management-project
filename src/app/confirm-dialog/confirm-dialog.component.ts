@@ -7,17 +7,16 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./confirm-dialog.component.css']
 })
 export class ConfirmDialogComponent {
- constructor(
+  constructor(
     public dialogRef: MatDialogRef<ConfirmDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { title: string; message: string }
+    @Inject(MAT_DIALOG_DATA) public data: { message: string }
   ) {}
 
   onConfirm(): void {
-    this.dialogRef.close(true);
+    this.dialogRef.close(true);  // Close the dialog and return true (confirmation)
   }
 
   onCancel(): void {
-    this.dialogRef.close(false);
+    this.dialogRef.close(false);  // Close the dialog and return false (cancellation)
   }
 }
-

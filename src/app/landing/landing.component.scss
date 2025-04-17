@@ -1,0 +1,153 @@
+:host {
+    display: block;
+    height: 90vh;
+    width: 1125px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    background: linear-gradient(to right, #c33764, #1d2671); // You can choose your own!
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    animation: fadeInPage 1.5s ease-in-out;
+   
+  }
+  
+  .landing-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    animation: slideUp 1s ease forwards;
+    overflow: hidden;
+  }
+  
+  .headline {
+    margin-top: 25px;
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+    line-height: 60px;
+  }
+  
+  .subtitle {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin-bottom: 3rem;
+    color: #f3f3f3;
+    line-height: 30px;
+  }
+  
+  .stats-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+  }
+  
+  .stat-card {
+    min-width: 220px;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    border-top: 5px solid #00d1ff;
+  
+    &:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+  
+    .stat-icon {
+      font-size: 25px;
+      color: #00d1ff;
+      margin-bottom: 0.5rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+      margin: 0;
+    }
+  
+    p {
+      margin: 0.2rem 0 0;
+      font-size: 1.1rem;
+      color: #e0e0e0;
+    }
+  }
+  
+  .cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+  
+    button {
+      font-size: 1rem;
+      padding: 0.75rem 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+  
+  // Animation Keyframes
+  @keyframes fadeInPage {
+    from {
+      opacity: 0;
+      background-position: left center;
+    }
+    to {
+      opacity: 1;
+      background-position: right center;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+
+  .headline {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  
+  .animated-brand {
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #42e695, #fbb03b, #ff6ec4);
+    background-size: 1000% 1000%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbowText 5s ease infinite;
+    font-weight: bold;
+  }
+  
+  @keyframes rainbowText {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

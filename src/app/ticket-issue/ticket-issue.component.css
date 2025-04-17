@@ -1,0 +1,86 @@
+/* General container padding */
+.container {
+  margin-top: 50px;
+  width: 1050px;
+}
+
+/* Form styling */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+form h3 {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+  font-size: 1rem;
+  color: #495057;
+  font-weight: 500;
+}
+
+/* Input and select field styling */
+input.form-control,
+select.form-control {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease;
+}
+
+/* Input and select focus effect */
+input.form-control:focus,
+select.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit button styling */
+button.form-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+button.form-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  button.form-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

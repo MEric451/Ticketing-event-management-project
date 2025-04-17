@@ -1,0 +1,91 @@
+{
+  "events": [
+    {
+      "name": "kaka empire",
+      "date": "2025-08-08",
+      "location": "uhuru gardens",
+      "capacity": 100,
+      "id": "8972"
+    },
+    {
+      "name": "sakaja'party",
+      "date": "2026-07-09",
+      "location": "uhurupark",
+      "capacity": 100,
+      "id": "1183"
+    },
+    {
+      "name": "solfest part",
+      "date": "2025-04-17",
+      "location": "kasarani",
+      "capacity": 20000,
+      "id": "15c0"
+    },
+    {
+      "name": "sakata festivals",
+      "date": "2025-09-09",
+      "location": "uhuru gardens",
+      "capacity": 110000,
+      "id": "08f1"
+    },
+    {
+      "name": "Tujikazee",
+      "date": "2025-12-12",
+      "location": "Murang'a Stadium",
+      "capacity": 3000,
+      "id": "325b"
+    }
+  ],
+  "attendees": [
+    {
+      "id": "867d",
+      "fullName": "ken",
+      "email": "ken@gmail.com",
+      "eventId": "1183"
+    },
+    {
+      "id": "c545",
+      "fullName": "sospeter kamau",
+      "email": "sos2@gmail.com",
+      "eventId": "08f1"
+    },
+    {
+      "id": "f1d9",
+      "fullName": "Julius Malema",
+      "email": "julli@gmail.com",
+      "eventId": "325b"
+    },
+    {
+      "id": "321e",
+      "fullName": "Justin Kamau",
+      "email": "justo2@gmail.com",
+      "eventId": "325b"
+    },
+    {
+      "id": "4f44",
+      "fullName": "hjhj",
+      "email": "hjhj@gmail.com",
+      "eventId": "5"
+    },
+    {
+      "id": "56d7",
+      "fullName": "kibathi",
+      "email": "kibathi@gmail.com",
+      "eventId": "1"
+    },
+    {
+      "id": "8305",
+      "fullName": "kol",
+      "email": "kol@gmail.com",
+      "eventId": "5"
+    }
+  ],
+  "tickets": [
+    {
+      "id": "67ba",
+      "attendeeId": "10",
+      "ticketType": "Regular",
+      "issuedAt": "2025-04-16T05:06:04.848Z"
+    }
+  ]
+}

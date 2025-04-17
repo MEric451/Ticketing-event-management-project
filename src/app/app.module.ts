@@ -21,37 +21,49 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { CreateCustomerComponent } from './create-customer/create-customer.component';
-import { CustomerListComponent } from './customer-list/customer-list.component';
-import { CreateAccountComponent } from './create-account/create-account.component';
-import { AccountListComponent } from './account-list/account-list.component';
-import { MapAtmCardComponent } from './map-atm-card/map-atm-card.component';
+
 import { MatCardModule } from '@angular/material/card';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { AtmCardTransactionFormComponent } from './atm-card-transaction-form/atm-card-transaction-form.component';
-import { AtmCardTransactionListComponent } from './atm-card-transaction-list/atm-card-transaction-list.component';
-import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { MatDividerModule } from '@angular/material/divider';
-import { AtmCardFormComponent } from './atm-card-form/atm-card-form.component';
+
+import { MatGridListModule } from '@angular/material/grid-list';
+
+import { RouterModule } from '@angular/router';
+import { EventCreateComponent } from './event-create/event-create.component';
+import { HttpClientModule } from '@angular/common/http';
+import { EventListComponent } from './event-list/event-list.component';
+import { EventViewModalComponent } from './event-view-modal/event-view-modal.component';
+import { RegisterAttendeeComponent } from './register-attendee/register-attendee.component';
+import { EditEventComponent } from './edit-event/edit-event.component';
+import { AttendeeListComponent } from './attendee-list/attendee-list.component';
+import { AttendeeDetailsModalComponent } from './attendee-details-modal/attendee-details-modal.component';
+import { TicketIssueComponent } from './ticket-issue/ticket-issue.component';
+import { TicketListComponent } from './ticket-list/ticket-list.component';
+import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CreateCustomerComponent,
-    CustomerListComponent,
-    CreateAccountComponent,
-    AccountListComponent,
-    MapAtmCardComponent,
     DashboardComponent,
-    AtmCardTransactionFormComponent,
-    AtmCardTransactionListComponent,
+    EventCreateComponent,
+    EventListComponent,
+    EventViewModalComponent,
+    RegisterAttendeeComponent,
+    EditEventComponent,
+    AttendeeListComponent,
+    AttendeeDetailsModalComponent,
+    TicketIssueComponent,
+    TicketListComponent,
     ConfirmDialogComponent,
-    AtmCardFormComponent
+    LandingComponent,
+    
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
@@ -72,7 +84,8 @@ import { AtmCardFormComponent } from './atm-card-form/atm-card-form.component';
     MatListModule,
     MatCardModule,
     MatDividerModule,
-
+    MatGridListModule,
+    HttpClientModule,
 
     ToastrModule.forRoot({
       positionClass: 'toast-top-right',

@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Issued Tickets</h2>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Attendee ID</th>
+        <th>Ticket Type</th>
+        <th>Amount</th>
+        <th>Attendee Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ticket of tickets">
+        <td>{{ ticket.ticketId }}</td>
+        <td>{{ ticket.attendee.fullName }}</td>
+        <td>{{ ticket.ticketType }}</td>
+        <td>{{ ticket.price | currency:'Kshs ' }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="cancelTicket(ticket.ticketId)">Cancel</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -14,17 +14,65 @@
         <!-- Sidenav -->
         <mat-sidenav #sidenav mode="side" opened>
             <mat-nav-list>
-                <a mat-list-item routerLink="dashboard">🏠 Dashboard</a>
-                <a mat-list-item routerLink="create-customer">➕ Create Customer</a>
-                <a mat-list-item routerLink="customers">👥 Customer List</a>
-                <a mat-list-item routerLink="create-account">➕ Create Account</a>
-                <a mat-list-item routerLink="accounts">💼 Account List</a>
-                <a mat-list-item routerLink="map-atm-card">🔗 Map ATM Card</a>
-                <a mat-list-item routerLink="mapped-cards">💳 Mapped Cards</a>
-                <a mat-list-item routerLink="atm-card-transaction-form">💵 Transaction Form</a>
-                <a mat-list-item routerLink="atm-transactions">📄 Transaction List</a>
+                <!--
+                <a mat-list-item routerLink="overview">
+                    <span class="nav-item">
+                        <mat-icon>dashboard</mat-icon>
+                        <span class="nav-text">Overview</span>
+                    </span>
+                </a> -->
 
-            </mat-nav-list>
+                <a mat-list-item routerLink="landing">
+                    <span class="nav-item">
+                        <mat-icon>event</mat-icon> <!-- "event" icon is best for creating an event -->
+                        <span class="nav-text">Dashboard</span>
+                    </span>
+                </a>
+
+                <a mat-list-item routerLink="event-create">
+                    <span class="nav-item">
+                        <mat-icon>event</mat-icon> <!-- "event" icon is best for creating an event -->
+                        <span class="nav-text">Create Event</span>
+                    </span>
+                </a>
+                
+                <a mat-list-item routerLink="event-list">
+                    <span class="nav-item">
+                        <mat-icon>list_alt</mat-icon> <!-- Shows list of events -->
+                        <span class="nav-text">Event List</span>
+                    </span>
+                </a>
+                
+                <a mat-list-item routerLink="register-attendee">
+                    <span class="nav-item">
+                        <mat-icon>person_add</mat-icon> <!-- Registering a new person -->
+                        <span class="nav-text">Register Attendee</span>
+                    </span>
+                </a>
+                
+                <a mat-list-item routerLink="attendee-list">
+                    <span class="nav-item">
+                        <mat-icon>people</mat-icon> <!-- Represents multiple attendees -->
+                        <span class="nav-text">Attendee List</span>
+                    </span>
+                </a>
+                
+                <a mat-list-item routerLink="ticket-issue">
+                    <span class="nav-item">
+                        <mat-icon>confirmation_number</mat-icon> <!-- Perfect for tickets -->
+                        <span class="nav-text">Ticket Issue</span>
+                    </span>
+                </a>
+                
+                <a mat-list-item routerLink="ticket-list">
+                    <span class="nav-item">
+                        <mat-icon>receipt_long</mat-icon> <!-- List of tickets -->
+                        <span class="nav-text">Ticket List</span>
+                    </span>
+                </a>
+            </mat-nav-list>                
+
+
 
             <!-- Logout Button 
             <div class="logout-container">
