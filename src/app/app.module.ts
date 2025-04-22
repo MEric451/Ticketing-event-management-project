@@ -41,6 +41,7 @@ import { TicketIssueComponent } from './ticket-issue/ticket-issue.component';
 import { TicketListComponent } from './ticket-list/ticket-list.component';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { LandingComponent } from './landing/landing.component';
+import { KenComponent } from './ken/ken.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { LandingComponent } from './landing/landing.component';
     TicketListComponent,
     ConfirmDialogComponent,
     LandingComponent,
+    KenComponent,
     
     
   ],
